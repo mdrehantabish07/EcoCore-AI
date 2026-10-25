@@ -1,0 +1,34 @@
+EcoCore AI — Industrial Energy & Carbon Optimization Platform
+========================================================================
+
+QUICKSTART GUIDE (Windows)
+1. Open this directory in VS Code or Terminal.
+2. (Optional) Create and activate virtual environment:
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   (If PowerShell script execution is blocked, use cmd: .venv\Scripts\activate.bat)
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+4. Run unit tests to verify system integrity:
+   python test_ecocore.py
+
+5. Launch the Streamlit dashboard:
+   python -m streamlit run app.py
+
+KEY FEATURES INCLUDED:
+- Data Quality & Hygiene Audit (missing values, invalid readings, duplicates, sampling gaps)
+- Evidence-Sufficiency Gate (evaluates whether data justifies actionable recommendations)
+- Identification of Missing Measurements (production volume, runtime, schedule, condition)
+- Value-of-Measurement (VoM) Module (uncertainty reduction & phased sensor roadmap)
+- ML Baseline Energy Model (scikit-learn linear regression with residual anomaly detection)
+- Investment-Aware Intervention Cases (problem, evidence, causes, actions, investment, payback)
+- Human Review & Approval Workflow (Pending Review, Approved, Rejected, Implemented)
+- Predicted-vs-Actual Verification (IPMVP comparability checklist & normalized savings)
+- Local SQLite Storage (ecocore.db stores cases, audit trail, and verifications)
+- Extended 72-Hour Demonstration Dataset (shifts, diurnal profile, power factor)
+
+NOTE:
+- Included datasets are synthetic demonstration data.
+- Hardware/PLC/SCADA/meter communication is kept strictly separate (decision support only).

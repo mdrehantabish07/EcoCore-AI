@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Streamlit secrets (local only)
+.streamlit/secrets.toml
+
+# SQLite local database & journals
+ecocore.db
+*.db-journal
+
+# Local backup directory
+backup_original/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
